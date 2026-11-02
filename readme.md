@@ -2,49 +2,24 @@
   <img src="assets/banner.svg" alt="Enigma Matrix: building agentic systems in public" width="100%">
 </p>
 
-<p align="center">
-  <b>AI and software, built to run in production.</b><br>
-  Agents · Retrieval (RAG) systems · Full-stack products
-</p>
+### 👋 About me
 
----
+I'm a software engineer who builds things end to end, from the system underneath to the interface on top. I don't tie myself to one stack: I pick up whatever the problem needs and ship it to production with tests, CI and documentation.
 
-### 🧭 What this is
+I work AI-first. Coding agents like **Claude Code** are part of how I design, build, review and ship software every day, and I know how to get production-quality results out of them rather than demos.
 
-This account is the workshop behind **Enigma Matrix**. It's where the code lives, where experiments start, and where the agentic systems get built **in public**: designs, failures, evaluations and all.
+### ⚡ What I can do
 
-### 🤖 Building in public: agentic systems
+- **🤖 AI agents & LLM apps:** agents with tool use and memory, retrieval (RAG) pipelines, and evaluation sets that prove they work
+- **🧠 Agentic engineering:** building and maintaining whole codebases with AI coding agents, with tests and CI as the guard rails
+- **🌐 Full-stack products:** web apps from database and APIs to a polished, responsive UI, on any stack
+- **☁️ Shipping & operations:** containers, CI/CD pipelines and cloud deployments
+- **👁️ Machine learning:** computer vision and applied ML, from training models to deploying them
+- **⚙️ Systems fundamentals:** operating systems, networking and low-level programming, so I understand what runs underneath
 
-The goal is agents that do real work and can show they did it right, not just demos.
+### 🎯 What's next
 
-| Track | What it explores | Status |
-| --- | --- | --- |
-| **Agent runtime** | Planning, tool use, memory and recovery from failure | 🟡 Designing |
-| **Evaluation first** | Every agent ships with an eval set and regression tests | 🟡 Designing |
-| **RAG that holds up** | Retrieval you can measure, with citations you can check | 🟢 Prototyping |
-| **Agent-assisted engineering** | Building whole products with AI coding agents, with tests and CI as the guard rails | 🟢 In daily use |
-
-Progress, write-ups and code will land here as each piece becomes usable.
-
-### 🧩 Products in the Matrix
-
-| | Product | What it does | Status |
-| --- | --- | --- | --- |
-| 🛒 | **Matrix Mart** | A local marketplace: free listings, in-app chat without sharing your number, nearby skilled workers | Built |
-| 📄 | **Enigma Tools** | PDF tools that run entirely in the browser. Your file is never uploaded | In development |
-| 🎓 | **Enigma Campus** | Build-along tracks that rebuild a real AI system, one commit at a time | In development |
-| 🎲 | **Enigma Games** | Ludo and Connect Four against a computer that plans ahead (negamax + alpha-beta, in a Web Worker) | Playable |
-
-### 📐 How things get built here
-
-```text
-scope ─► prototype on real data ─► production build ─► hand over
-           │                          │
-           └─ checked against an      └─ tests · CI on every change · docs
-              evaluation set
-```
-
-Stack-agnostic by design: the right tool for the problem, picked per project.
+Building **agentic systems in public**: agents that do real work and can show they did it right. The code, experiments and lessons will show up here as they become usable.
 
 ---
 
