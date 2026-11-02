@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="Animated agent loop: plan, act with tools, remember, evaluate, ship" width="100%">
+  <img src="assets/hero.svg" alt="Animated terminal: an AI agent plans, edits, tests, reviews and ships a change" width="100%">
 </p>
 
 ### 👋 About me
