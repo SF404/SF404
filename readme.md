@@ -1,24 +1,51 @@
-# Hi, I'm Suhaib 👋
+<p align="center">
+  <img src="assets/banner.svg" alt="Enigma Matrix: building agentic systems in public" width="100%">
+</p>
 
-Software engineer who likes building things end to end, from the system underneath to the interface on top.
+<p align="center">
+  <b>AI and software, built to run in production.</b><br>
+  Agents · Retrieval (RAG) systems · Full-stack products
+</p>
 
-- 🛠️ **Currently building:** tools for financial and sustainability reporting (XBRL / ESRS) and equity analysis
-- 🧠 **Interested in:** full-stack web apps, applied machine learning, and low-level systems
-- 🔬 **Past work includes:** custom xv6 system calls, an 8085 microprocessor simulator, and a network simulator for the physical and data-link layers
-- 🤝 **Open to:** collaborating on full-stack and ML projects
+---
 
-## 🧰 Tools I use
+### 🧭 What this is
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![C/C++](https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+This account is the workshop behind **Enigma Matrix**. It's where the code lives, where experiments start, and where the agentic systems get built **in public**: designs, failures, evaluations and all.
 
-## 📫 Get in touch
+### 🤖 Building in public: agentic systems
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/suhaib-ahmad)
+The goal is agents that do real work and can show they did it right, not just demos.
+
+| Track | What it explores | Status |
+| --- | --- | --- |
+| **Agent runtime** | Planning, tool use, memory and recovery from failure | 🟡 Designing |
+| **Evaluation first** | Every agent ships with an eval set and regression tests | 🟡 Designing |
+| **RAG that holds up** | Retrieval you can measure, with citations you can check | 🟢 Prototyping |
+| **Agent-assisted engineering** | Building whole products with AI coding agents, with tests and CI as the guard rails | 🟢 In daily use |
+
+Progress, write-ups and code will land here as each piece becomes usable.
+
+### 🧩 Products in the Matrix
+
+| | Product | What it does | Status |
+| --- | --- | --- | --- |
+| 🛒 | **Matrix Mart** | A local marketplace: free listings, in-app chat without sharing your number, nearby skilled workers | Built |
+| 📄 | **Enigma Tools** | PDF tools that run entirely in the browser. Your file is never uploaded | In development |
+| 🎓 | **Enigma Campus** | Build-along tracks that rebuild a real AI system, one commit at a time | In development |
+| 🎲 | **Enigma Games** | Ludo and Connect Four against a computer that plans ahead (negamax + alpha-beta, in a Web Worker) | Playable |
+
+### 📐 How things get built here
+
+```text
+scope ─► prototype on real data ─► production build ─► hand over
+           │                          │
+           └─ checked against an      └─ tests · CI on every change · docs
+              evaluation set
+```
+
+Stack-agnostic by design: the right tool for the problem, picked per project.
+
+---
+
+<p align="center"><sub>Enigma Matrix · building in the open</sub></p>
