@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Enigma Matrix: building agentic systems in public" width="100%">
+  <img src="assets/hero.svg" alt="Animated agent loop: plan, act with tools, remember, evaluate, ship" width="100%">
 </p>
 
 ### 👋 About me
@@ -20,7 +20,3 @@ I work AI-first. Coding agents like **Claude Code** are part of how I design, bu
 ### 🎯 What's next
 
 Building **agentic systems in public**: agents that do real work and can show they did it right. The code, experiments and lessons will show up here as they become usable.
-
----
-
-<p align="center"><sub>Enigma Matrix · building in the open</sub></p>
