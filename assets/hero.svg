@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Animated agent loop: plan, act with tools, remember, evaluate, ship">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f1a"/>
+      <stop offset="1" stop-color="#121a2b"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#1f2a3d"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+    <path id="loop" d="M600 70 C760 70 860 110 860 160 C860 210 760 250 600 250 C440 250 340 210 340 160 C340 110 440 70 600 70 Z"/>
+    <style>
+      .lbl{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;fill:#9ca3af;letter-spacing:1px}
+      .node{fill:#0b0f1a;stroke-width:2.5}
+      .pulse{animation:pulse 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .d1{animation-delay:0s}.d2{animation-delay:.8s}.d3{animation-delay:1.6s}.d4{animation-delay:2.4s}.d5{animation-delay:3.2s}
+      @keyframes pulse{0%,100%{opacity:.35;transform:scale(1)}20%{opacity:1;transform:scale(1.35)}40%{opacity:.35;transform:scale(1)}}
+      .core{animation:breathe 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes breathe{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+      .dash{stroke-dasharray:6 10;animation:flow 2.5s linear infinite}
+      @keyframes flow{to{stroke-dashoffset:-64}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#dots)"/>
+  <ellipse cx="600" cy="160" rx="300" ry="140" fill="url(#glow)"/>
+
+  <!-- side streams: input on the left, output on the right -->
+  <g stroke-width="2" fill="none">
+    <path class="dash" d="M60 160 H330" stroke="#818cf8" opacity=".7"/>
+    <path class="dash" d="M870 160 H1140" stroke="#34d399" opacity=".7"/>
+  </g>
+  <g class="lbl">
+    <text x="60" y="140">input</text>
+    <text x="1095" y="140">output</text>
+  </g>
+
+  <!-- the loop -->
+  <use href="#loop" fill="none" stroke="#273349" stroke-width="2"/>
+  <use href="#loop" fill="none" stroke="url(#line)" stroke-width="2.5" class="dash"/>
+
+  <!-- travelling signal -->
+  <circle r="7" fill="#e0e7ff" filter="url(#soft)">
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#loop"/></animateMotion>
+  </circle>
+  <circle r="4" fill="#ffffff">
+    <animateMotion dur="4s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion>
+  </circle>
+
+  <!-- core -->
+  <circle cx="600" cy="160" r="30" fill="#0b0f1a" stroke="url(#line)" stroke-width="3"/>
+  <circle cx="600" cy="160" r="12" fill="url(#line)" class="core"/>
+
+  <!-- stage nodes -->
+  <g>
+    <circle cx="600" cy="70" r="12" class="node" stroke="#818cf8"/>
+    <circle cx="600" cy="70" r="5" fill="#818cf8" class="pulse d1"/>
+    <circle cx="845" cy="125" r="12" class="node" stroke="#a78bfa"/>
+    <circle cx="845" cy="125" r="5" fill="#a78bfa" class="pulse d2"/>
+    <circle cx="760" cy="238" r="12" class="node" stroke="#c084fc"/>
+    <circle cx="760" cy="238" r="5" fill="#c084fc" class="pulse d3"/>
+    <circle cx="440" cy="238" r="12" class="node" stroke="#2dd4bf"/>
+    <circle cx="440" cy="238" r="5" fill="#2dd4bf" class="pulse d4"/>
+    <circle cx="355" cy="125" r="12" class="node" stroke="#34d399"/>
+    <circle cx="355" cy="125" r="5" fill="#34d399" class="pulse d5"/>
+  </g>
+  <g class="lbl">
+    <text x="600" y="44" text-anchor="middle">plan</text>
+    <text x="870" y="112">act · tools</text>
+    <text x="782" y="280">remember</text>
+    <text x="418" y="280" text-anchor="end">evaluate</text>
+    <text x="330" y="112" text-anchor="end">ship</text>
+  </g>
+</svg>
